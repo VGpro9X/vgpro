@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/surveyForm.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Title -->
+
+    <h1 id="title">VG-PRO Survey Form</h1>
+    <p id="description">Thank you for taking the time to help me improve myself</p>
+
+    <!-- information fields -->
+    <form action="POST" id="survey-form">
+        <div id="field">
+            <label for="name" id="name-label">
+                <p>Name</p> 
+                <input name="name" type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">
+                <p>Email</p>
+                <input name="email" type="email" id="email" placeholder="Enter your email" required>
+                </label>
+            <label for="number" id="number-label">
+                <p>Age</p>
+                <input name="age" type="number" id="number" placeholder="Age" min="10" max="100" required>
+            </label>
+        </div>
+
+    <!-- select role -->
+    <div id="selection">
+        <p>Choose Your Current Role</p>
+        <select name="role" id="dropdown">
+            <option disabled selected value>Select current role</option>
+            <option value="Front-End">Front-End</option>   
+            <option value="Back-End">Back-End</option>   
+            <option value="Full-Stack">Full-Stack</option>   
+            <option value="Other">Other</option>   
+        </select>
+    </div>
+
+    <!-- improve check-box -->
+    <div id="check-boxes">
+
+        <h3>What things I need to improve</h3>
+
+        <input type="checkbox" id="learn-more" value="learn more">
+        <label for="learn-more">Learn More</label>
+        <input type="checkbox" id="read-more" value="read more">
+        <label for="read-more">Read More</label>
+        <input type="checkbox" id="do-more" value="do more">
+        <label for="do-more">Do More</label>
+    </div>
+
+    <!-- recommend ratio -->
+    <div id="ratio-btn">
+
+        <h3>would you recommend me to your friend?</h3>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Yes</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">No</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Maybe</label>
+    </div>
+
+    <!-- text-area -->
+    <div id="text-area">
+        <textarea name="text" id="text-area" cols="30" rows="10" placeholder="Enter Your Comment Here..."></textarea>
+    </div>
+
+    <!-- button -->
+    <div>
+        <button id="submit">Submit</button>
+    </div>
+    </form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

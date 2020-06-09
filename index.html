@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Javacript/main.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>VG-PRO Official Website</title>
+</head>
+<body>  
+    <!-- Navigation -->
+    <div id="nav-bar" class="main">
+        <h1 id="brand">VG-<em>PRO</em></h1>
+        <nav>
+            <ul>
+                <li class="hightlight"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="surveyForm.html">SurveyForm</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- showcase -->
+
+    <div id="showcase">
+        <div>
+            <h1>VG-PRO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi beatae, quisquam omnis quam distinctio officia earum odio tempora maxime porro nemo cumque commodi totam autem magnam doloremque vero deleniti. Nulla minima reiciendis excepturi magni, doloremque consequuntur tenetur maiores porro accusantium.</p>
+            <button class="" id="btn">Call Me</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="show-up">
+        <h1>My Skills</h1>
+    </div>
+    <section>
+        <div class="show-skills">
+            <article class="show-layout">
+                <img src="./Images/html5-icon.jpg" alt="html5-icon" class="title-images">
+                <h3 class="titles">HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam nulla porro officiis, corrupti, neque perferendis maxime quod mollitia quae accusantium vitae iure incidunt blanditiis nesciunt enim alias sunt ea provident reprehenderit tempore? Cumque provident repellat quo perspiciatis quas non!</p>
+            </article>
+        </div>
+
+        <div class="show-skills">
+            <article class="main-layout">
+                <img src="./Images/css3-icon.jpg" alt="css3-icon" class="title-images">
+                <h3 class="titles">CSS</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quae, aliquam harum, recusandae saepe ipsam architecto culpa cumque blanditiis minus quidem inventore obcaecati deserunt earum optio quis minima pariatur aperiam maxime, placeat ad at perspiciatis. Reiciendis vitae omnis perspiciatis eaque.</p>
+            </article>
+        </div>
+
+        <div class="show-skills">
+            <article class="main-layout">
+                <img src="./Images/javascript-icon.jpg" alt="javascript-icon" class="title-images">
+                <h3 class="titles">Javacript</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquam eum delectus molestiae aspernatur similique corporis pariatur excepturi dolores. Qui esse eius laudantium asperiores illo necessitatibus magni iusto omnis cupiditate quam itaque modi repudiandae explicabo, ullam quaerat eos officia. Eius!</p>
+            </article>
+        </div>
+    </section>
+
+    <div class="show-up">
+        <h1>My Projects</h1>
+    </div>
+    <section>
+        <div id="projects">
+            <a href="https://vgpro9x.github.io/SimpleResponsiveWebsite/index.html" target="_blank">
+                <img src="./Images/simple-responsive-website.jpg" alt="" class="projects-images">
+            </a>
+        </div>
+
+        <div id="projects">
+            <a href="https://codepen.io/VG-PRO/full/RwPoxOe" target="_blank">
+                <img src="./Images/1st _projects - Tribute Page.jpg" alt="" class="projects-images">
+            </a>
+        </div>
+
+        <div id="projects">
+            <a href="https://quangnui.000webhostapp.com/" target="_blank">
+                <img src="./Images/quangnui-project.jpg" alt="" class="projects-images">
+            </a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2020 | VG-<em>PRO</em></p>
+    </footer>
+
+    <script>
+
+
+        $('.show-skills').hide();
+        $("#nav-bar").hide();
+        $("#nav-bar").fadeIn(1500, function() {
+            $('.show-skills').fadeToggle(1000);
+        });
+
+        $('#showcase').hide();
+        $('#showcase').fadeIn();
+
+        $('#projects').hide();
+        $('.projects-images').hide();
+
+        $('#projects').fadeIn(1000, function() {
+            $('.projects-images').fadeIn(2000);
+        });
+
+        
+
+        
+
+    </script>
+</body>
+</html>
